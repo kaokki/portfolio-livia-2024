@@ -1,0 +1,303 @@
+.sidebar {
+    width: 18vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 34px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: $darkblue;
+
+    @include size(medium){
+        width: 100vw;
+        height: 60px;
+        flex-direction: row;
+        padding: 0 30px;
+        align-items: center;
+    }
+
+    .logo {
+        font-weight: 400;
+        font-size: 20px;
+        color: #ea80fc;
+        text-decoration: none;
+        letter-spacing: .7px;
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        flex-wrap: nowrap;
+        transition: all 200ms ease-in-out;
+
+        @include size(medium){
+            font-size: 18px;
+            gap: 12px;
+        }
+
+        &:before {
+            content: url(/src/imgs/ast.svg);
+            width: 18px;
+            height: 18px;
+            display: inline-block;
+        }
+
+        &:hover {
+            color: $yellow;
+        }
+    }
+
+    .menu {
+
+        @include size(medium){
+            //display: none;
+            position: fixed;
+            display: flex;
+            right: -50vw;
+            width: 50vw;
+            background-color: $darkblue;
+            height: 100%;
+            top: 0;
+            z-index: 200;
+            justify-content: space-evenly;
+            align-items: center;
+            transition: all 0.3s ease-in-out;
+            pointer-events: none;
+        }
+
+        @include size(small){
+            width: 100vw;
+            right: -100vw;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+
+            li {
+                opacity: 0;
+                animation: Up 300ms ease-in-out 1;
+                animation-fill-mode: forwards;
+
+                @include size(medium){
+                    animation: none;
+                    opacity: 1;
+                }
+
+                &:nth-child(2) {
+                    animation-delay: 0.1s;
+                }
+                &:nth-child(3) {
+                    animation-delay: 0.2s;
+                }
+                &:nth-child(4) {
+                    animation-delay: 0.3s;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $light;
+                    font-size: 18px;
+                    font-weight: 400;
+                    letter-spacing: 0.8px;
+                    line-height: 20px;
+                    position: relative;
+                    transition: all 200ms ease-in-out;
+
+                    &:after {
+                        //content: url(/src/imgs/arrow.svg);
+                        position: absolute;
+                        top: 2px;
+                        margin-left: 32px;
+                        transition: all 200ms ease-in-out;
+                        opacity: 0;
+                    }
+
+                    &:hover,
+                    &.on {
+                        color: $yellow;
+
+                        &:after {
+                            opacity: 1;
+                            margin-left: 16px;
+                        }
+                    }
+
+                    &[href='#about']{
+                        &:after {
+                            content: url(/src/imgs/arrow.svg);
+                        }
+                    }
+
+                    &[href='#skills']{
+                        &:after {
+                            content: url(/src/imgs/equal.svg);
+                        }
+                    }
+
+                    &[href='#projects']{
+                        &:after {
+                            content: url(/src/imgs/ast.svg);
+                            filter: brightness(0) saturate(100%) invert(69%) sepia(98%) saturate(2504%) hue-rotate(228deg) brightness(98%) contrast(102%);
+                        }
+                    }
+
+                    &[href='#contact']{
+                        &:after {
+                            content: url(/src/imgs/colchete.svg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .menu_bg {
+        display: none;
+
+        @include size(medium){
+            display: block;
+            opacity: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100%;
+            background-color: rgba(0,0,0,.7);
+            z-index: 100;
+            pointer-events: none;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    .menu-btn {
+        display: none;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        z-index: 1000;
+        height: 23px;
+
+        @include size(medium){
+            display: block;
+        }
+
+        span {
+            height: 2px;
+            width: 20px;
+            display: block;
+            background-color: $light;
+            transition: all 0.2s ease-in-out;
+            transform: rotate(0deg);
+            transition: .15s ease-in-out;
+
+            &:first-child{
+                margin-bottom: 4px;
+            }
+
+            &:last-child{
+                margin-top: 4px;
+            }
+        }
+
+    }
+
+    &.on {
+        .menu-btn {
+            span {
+                &:first-child {
+                    transform: rotate(45deg);
+                }
+
+                &:nth-child(2) {
+                    transform: rotate(-45deg);
+                    margin-top: -6px;
+                }
+
+                &:last-child{
+                    opacity: 0;
+                    margin-top: -10px;
+                }
+            }
+
+            &:hover {
+                span {
+                    &:first-child{
+                        margin-bottom: 4px;
+                    }
+                }
+            }
+        }
+
+        .menu {
+            right: 0;
+            transition: all 0.3s ease-in-out;
+            pointer-events: auto;
+        }
+        
+        .menu_bg {
+            opacity: 1;
+            pointer-events: auto;
+            transition: all 0.3s ease-in-out;
+
+            @include size(medium){
+                display: block;
+            }
+        }
+    }
+
+    
+
+    &__contact {
+        animation: Up 300ms ease-in-out 1;
+        animation-fill-mode: forwards;
+        animation-delay: 0.35s;
+        opacity: 0;
+
+        @include size(medium){
+            animation: none;
+            opacity: 1;
+        }
+
+
+        p {
+            font-size: 16px;
+            line-height: 18px;
+            letter-spacing: 0.7px;
+            font-weight: 400;
+            display: block;
+            margin-bottom: 16px;
+        }
+
+        .social {
+            display: flex;
+            gap: 16px;
+
+            a {
+                transition: all 300ms ease-in-out;
+                filter: brightness(0) saturate(100%) invert(69%) sepia(98%) saturate(2504%) hue-rotate(228deg) brightness(98%) contrast(102%);
+
+                &.linkedin {
+                    content: url('../imgs/linkedin.svg');
+                }
+                &.git {
+                    content: url('../imgs/github.svg');
+                }
+                &.mail {
+                    content: url('../imgs/mail.svg');
+                }
+
+                &:hover {
+                    filter: brightness(0) saturate(100%) invert(89%) sepia(28%) saturate(500%) hue-rotate(357deg) brightness(102%) contrast(104%);
+                }
+            }
+        }
+
+        @include size(medium){
+            display: none;
+        }
+    }
+}

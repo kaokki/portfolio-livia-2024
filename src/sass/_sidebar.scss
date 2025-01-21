@@ -9,8 +9,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100;
-    background-color: $darkblue;
+    z-index: 1000;
+    background-color: transparent;
 
     @include size(medium){
         width: 100vw;
@@ -126,26 +126,26 @@
                         }
                     }
 
-                    &[href='#about']{
+                    &[href='/#about']{
                         &:after {
                             content: url(/src/imgs/arrow.svg);
                         }
                     }
 
-                    &[href='#skills']{
+                    &[href='/#skills']{
                         &:after {
                             content: url(/src/imgs/equal.svg);
                         }
                     }
 
-                    &[href='#projects']{
+                    &[href='/#projects']{
                         &:after {
                             content: url(/src/imgs/ast.svg);
                             filter: brightness(0) saturate(100%) invert(69%) sepia(98%) saturate(2504%) hue-rotate(228deg) brightness(98%) contrast(102%);
                         }
                     }
 
-                    &[href='#contact']{
+                    &[href='/#contact']{
                         &:after {
                             content: url(/src/imgs/colchete.svg);
                         }

@@ -86,10 +86,10 @@ section.about {
     }
 
     h1 {
-        @include title-text;
         animation: Up 300ms ease-in-out 1;
         animation-fill-mode: forwards;
         opacity: 0;
+        @include title-text;
 
         @include size(medium){
             animation: none;
@@ -98,12 +98,12 @@ section.about {
     }
 
     p {
-        @include p-text;
         animation: Up 300ms ease-in-out 1;
         animation-fill-mode: forwards;
         animation-delay: 0.1s;
         opacity: 0;
-
+        @include p-text;
+        
         @include size(medium){
             animation: none;
             opacity: 1;

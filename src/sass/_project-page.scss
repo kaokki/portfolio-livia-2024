@@ -1,0 +1,220 @@
+.project-detail {
+    height: auto;
+    display: block;
+
+    .container {
+        max-width: 950px;
+        width: 100%;
+        margin: 50px 0 50px 12%;
+
+        @include size(medium){
+            margin: 50px 0;
+            max-width: 100%;
+            padding: 0 30px;
+        }
+
+        h2 {
+            font-size: 44px;
+            line-height: 50px;
+            color: $darkblue;
+            margin-bottom: 80px;
+            font-weight: 700;
+
+            animation: Up 300ms ease-in-out 1;
+            animation-fill-mode: forwards;
+            opacity: 0;
+
+            @include size(medium){
+                margin-bottom: 40px;
+                animation: none;
+                opacity: 1;
+            }
+        }
+
+        .detail {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            @include size(medium){
+                display: block;
+            }
+            .text {
+                max-width: 625px;
+                width: 100%;
+                animation: Up 300ms ease-in-out 1;
+                animation-delay: 0.15s;
+                animation-fill-mode: forwards;
+                opacity: 0;
+
+                @include size(medium){
+                    max-width: 100%;
+                    animation: none;
+                    opacity: 1;
+                }
+    
+                h3 {
+                    color: $pink;
+                    font-size: 24px;
+                    line-height: 38px;
+                    font-weight: 700;
+                    margin-bottom: 16px;
+                }
+    
+                p {
+                    @include p-text;
+                    & {
+                        font-size: 18px;
+                        line-height: 28px;
+                    }
+                }
+
+                .btns {
+                    display: flex;
+                    gap: 16px;
+
+                    a {
+                        background-color: $lightyellow;
+                        color: $darkblue;
+                        font-size: 18px;
+                        line-height: 20px;
+                        font-weight: 400;
+                        padding: 11px 14px 11px 42px;
+                        text-decoration: none;
+                        position: relative;
+
+                        span {
+                            position: relative;
+                            z-index: 100;
+                        }
+
+                        &:after {
+                            position: absolute;
+                        }
+
+                        &.site{ 
+                            &:after {
+                                content: url(/src/imgs/site.svg);
+                                top: 12px;
+                                left: 14px;
+                            }
+                        }
+
+                        &.git{ 
+                            &:after {
+                                content: url(/src/imgs/github.svg);
+                                top: 9px;
+                                left: 12px;
+                                filter: brightness(0) saturate(100%) invert(14%) sepia(30%) saturate(5956%) hue-rotate(225deg) brightness(88%) contrast(99%);
+                            }
+                        }
+
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            height: 100%;
+                            background-color: $pink;
+                            width: 5px;
+                            display: block;
+                            top: 0;
+                            left: 0;
+                            transition: all 0.25s ease-in-out;
+                        }
+
+                        &:hover {
+                            &:before {
+                                transition: all 0.25s ease-in;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .skill-list {
+                padding-right: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 48px;
+                max-width: 244px;
+                width: 100%;
+                animation: Up 300ms ease-in-out 1;
+                animation-delay: 0.15s;
+                animation-fill-mode: forwards;
+                opacity: 0;
+
+                @include size(medium){
+                    animation: none;
+                    opacity: 1;
+                }
+    
+                h3 {
+                    color: $pink;
+                    font-size: 24px;
+                    line-height: 38px;
+                    font-weight: 700;
+                    margin-bottom: 16px;
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+    
+                ul {                
+                    li {
+                        list-style-type: disc;
+                        font-size: 18px;
+                        line-height: 28px;
+                        list-style-position: inside;
+                    }
+                }
+            }
+        }
+
+        .gallery {
+            margin: 120px 0;
+            animation: Up 300ms ease-in-out 1;
+            animation-fill-mode: forwards;
+            opacity: 0;
+            animation-delay: 0.3s;
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+
+            @include size(medium){
+                margin: 60px 0;
+                animation: none;
+                opacity: 1;
+                gap: 40px;
+            }
+
+            img {
+                display: block;
+                min-height: 400px;
+                width: 100%;
+                background-color: $yellow;
+            }
+
+            .desc {
+                h4 {
+                    font-size: 24px;
+                    line-height: 38px;
+                    color: $pink;
+                    font-weight: 700;
+                    margin-bottom: 16px;
+                }
+
+                p {
+                    @include p-text;
+                    & {
+                        font-size: 18px;
+                        line-height: 28px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+}

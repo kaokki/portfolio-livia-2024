@@ -2,6 +2,8 @@ $darkblue: #1A237E;
 $light: #F3E5F5;
 $yellow: #FFF59D;
 $pink: #EA80FC;
+$darkgrey: #3A3A3A;
+$lightyellow : #FFF59D;
 
 /* MEDIA QUERY */
 
@@ -33,6 +35,11 @@ body {
         box-sizing: border-box;
     }
 }
+
+::selection {
+    color: $darkblue;
+    background: $pink;
+  }
 
 .wrapper {
     //display: flex;
@@ -122,6 +129,7 @@ main {
     width: 81vw;
     position: absolute;
     right: 0;
+    z-index: 100;
 
     @include size(medium){
         width: 100vw;
@@ -161,9 +169,9 @@ main {
                 }
 
                 p {
-                    @include p-text;
                     max-width: 321px;
                     width: 100%;
+                    @include p-text;
 
                     strong {
                         color:  $pink
@@ -202,5 +210,93 @@ main {
     @import 'projects';
 }
 
+@import 'project-page';
+
 
 @import 'sidebar';
+
+#move{
+    background: #212C9D;
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    //filter: blur(80px);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    z-index: 1;
+
+    @include size(small){
+        display: none;
+    }
+}
+
+.light {
+    background-color: #fff;
+    color: $darkgrey;
+
+    .sidebar {
+        background-color: #fff;
+
+        .logo {
+            color: #ea80fc;
+    
+            &:hover {
+                color: $darkblue;
+            }
+            &:before {
+                filter: brightness(0) saturate(100%) invert(14%) sepia(30%) saturate(5956%) hue-rotate(225deg) brightness(88%) contrast(99%);
+            }
+        }
+    
+        .menu {
+            @include size(medium){
+                background-color: #fff;
+            }
+    
+            ul {    
+                li {
+                    a {
+                        color: $darkgrey;
+    
+                        &:hover,
+                        &.on {
+                            color: $pink;
+                        }
+
+                        &:after {
+                            filter: brightness(0) saturate(100%) invert(14%) sepia(30%) saturate(5956%) hue-rotate(225deg) brightness(88%) contrast(99%);
+                        }
+                    }
+                }
+            }
+        }
+    
+        .menu_bg {
+            @include size(medium){
+                background-color: rgba(0,0,0,.7);
+            }
+        }
+    
+        .menu-btn {    
+            span {
+                background-color: $darkgrey;
+            }
+    
+        }
+        
+    
+        &__contact {
+            .social {    
+                a {
+                    filter: brightness(0) saturate(100%) invert(69%) sepia(98%) saturate(2504%) hue-rotate(228deg) brightness(98%) contrast(102%);
+    
+                    &:hover {
+                        filter: brightness(0) saturate(100%) invert(14%) sepia(30%) saturate(5956%) hue-rotate(225deg) brightness(88%) contrast(99%);
+                    }
+                }
+            }
+        }
+    }
+}

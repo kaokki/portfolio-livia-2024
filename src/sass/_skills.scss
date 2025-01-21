@@ -28,8 +28,10 @@ section.skills {
 
             p {
                 @include p-text;
-                font-size: 18px;
-                line-height: 28px;
+                & {
+                    font-size: 18px;
+                    line-height: 28px;
+                }
             }
         }
 

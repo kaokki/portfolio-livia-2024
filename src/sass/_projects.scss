@@ -13,8 +13,8 @@ section.projects {
         }
 
         h3 {
-            @include title-text;
             margin-bottom: 112px;
+            @include title-text;
 
             @include size(medium){
                 margin-bottom: 50px;

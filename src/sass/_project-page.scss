@@ -1,11 +1,12 @@
-.project-detail {
+.project-detail,
+.other-works {
     height: auto;
     display: block;
 
     .container {
         max-width: 950px;
         width: 100%;
-        margin: 50px 0 50px 12%;
+        margin: 50px auto 50px auto;
 
         @include size(medium){
             margin: 50px 0;
@@ -191,12 +192,18 @@
 
             img {
                 display: block;
-                min-height: 400px;
+                //min-height: 400px;
                 width: 100%;
                 background-color: $yellow;
             }
 
             .desc {
+                margin-bottom: 80px;
+
+                @include size(medium){
+                    margin-bottom: 40px;
+                }
+
                 h4 {
                     font-size: 24px;
                     line-height: 38px;
@@ -211,6 +218,159 @@
                         font-size: 18px;
                         line-height: 28px;
                         margin: 0;
+                    }
+                }
+            }
+
+            .flex {
+                display: flex;
+                justify-content: space-between;
+                gap: 45px;
+
+                @include size(small){
+                    display: block;
+                }
+
+                img {
+                    @include size(medium){
+                        width: 50%;
+                    }
+
+                    @include size(small){
+                        width: 100%;
+                    }
+                }
+            }
+            .video {
+                background-color: var(--bg-color);
+                display: flex;
+                visibility: hidden;
+                align-items: center;
+                width: 100%;
+
+                &.show {
+                    visibility: visible;
+                }
+
+                &.center {
+                    justify-content: center;
+
+                    video {
+                        margin: 50px;
+                    }
+                }
+
+                video {
+                    max-width: 700px;
+                    border-radius: 15px;
+                    box-shadow: 3px 4px 11px -1px rgba(0,0,0,0.36);
+                    -webkit-box-shadow: 3px 4px 11px -1px rgba(0,0,0,0.36);
+                    -moz-box-shadow: 3px 4px 11px -1px rgba(0,0,0,0.36);
+                }
+
+                &.full {
+                    video {
+                        max-width: 100%;
+                        border-radius: 0;
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+
+        & > h3 {
+            color: $pink;
+            font-size: 56px;
+            line-height: 64px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            max-width: 450px;
+            margin-bottom: 100px;
+
+            @include size(medium){
+                margin-bottom: 50px;
+                font-size: 28px;
+                line-height: 32px;
+            }
+        }
+
+        .works-wrapper {
+            column-count: 2;
+            column-gap: 10px;
+            max-width: 890px;
+            width: 100%;
+            display: block;
+
+            @include size(medium){
+                column-gap: 30px;
+            }
+
+            @include size(small){
+                column-count: 1;
+            }
+
+            a {
+                text-decoration: none;
+                color: $light;
+                margin: 0;
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                margin-bottom: 10px;
+                break-inside: avoid;
+                max-width: 370px;
+
+                @include size(small){
+                    display: block;
+                }
+
+                &:nth-child(3){
+                    & > img {
+                        margin-top: 100px;
+
+                        @include size(small){
+                            margin-top: auto;
+                        }
+                    }
+                }
+
+
+                img {
+                    max-width: 370px;
+                    width: 100%;
+                    min-height: 310px;
+                    background-color: rgb(184, 184, 184);
+                    display: block;
+                    margin-bottom: 16px;
+                    border-radius: 40px;
+                    transition: all .2s ease-in-out;
+
+                    grid-row: 1 / -1;
+                    grid-column: 1;
+                }
+
+                
+
+                p {
+                    font-size: 18px;
+                    line-height: 28px;
+                    margin-bottom: 72px;
+                    font-weight: 700;
+                    text-align: center;
+                    color: $darkblue;
+
+                    @include size(medium){
+                        margin-bottom: 50px;
+                    }
+
+                    @include size(small){
+                        margin-bottom: 40px;
+                    }
+
+                }
+
+                &:hover {
+                    img {
+                        transform: scale(1.02);
                     }
                 }
             }

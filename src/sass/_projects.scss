@@ -1,4 +1,30 @@
-section.projects {
+
+// segunda coluna da grid começar mais embaixo
+@function middle-child(
+  $max-children,
+  $min-children: 1,
+  $when-even: 'both',
+  $base-selector: "&"
+){
+  $selector: join((),(),comma);
+
+  
+  @for $i from ceil(calc($min-children / 2)) through calc($max-children / 2 + 1) {
+    $selector: append($selector, "#{$base-selector}:nth-child(#{$i}):nth-last-child(#{$i})");
+
+    @if not in-list($when-even, ('before', 'none')) {
+      $selector: append($selector, "#{$base-selector}:nth-child(#{$i}):nth-last-child(#{$i - 1})");
+    }
+
+    @if not in-list($when-even, ('after', 'none')) {
+      $selector: append($selector, "#{$base-selector}:nth-child(#{$i}):nth-last-child(#{$i + 1})");
+    }
+  }
+
+  @return $selector;
+}
+
+.projects {
     height: auto;
 
     .container {
@@ -13,12 +39,14 @@ section.projects {
         }
 
         h3 {
-            margin-bottom: 112px;
             @include title-text;
+             & {
+                margin-bottom: 112px;
 
-            @include size(medium){
-                margin-bottom: 50px;
-            }
+                @include size(medium){
+                    margin-bottom: 50px;
+                }
+             }            
         }
 
         .wrapper-projects {
@@ -49,6 +77,18 @@ section.projects {
                     display: block;
                 }
 
+                #{middle-child(14, $when-even: 'after')} {
+                    //background-color: red;
+
+                    & > img {
+                        margin-top: 200px;
+
+                        @include size(small){
+                            margin-top: auto;
+                        }
+                    }
+                }
+
 
                 img {
                     max-width: 370px;
@@ -64,31 +104,29 @@ section.projects {
                     grid-column: 1;
                 }
 
-                &:nth-child(6){
-                    margin-top: 250px;
+                // &:nth-child(5){
+                //     margin-top: 250px;
 
-                    @include size(medium){
-                        margin-top: 0;
-                    }
-                }
+                //     @include size(medium){
+                //         margin-top: 0;
+                //     }
+                // }
 
                 p {
                     font-size: 18px;
                     line-height: 28px;
                     margin-bottom: 72px;
+                    font-weight: 700;
+                    text-align: center;
 
                     @include size(medium){
                         margin-bottom: 50px;
-                        text-align: center;
                     }
 
                     @include size(small){
                         margin-bottom: 40px;
                     }
 
-                    strong {
-                        font-weight: 700;
-                    }
                 }
 
                 &:hover {
@@ -97,6 +135,14 @@ section.projects {
                     }
                 }
             }
+
+            // & > * {
+            //     #{middle-child(14, $when-even: 'after')} {
+            //         color: blue;
+            //         background-color: red;
+            //         margin-top: 100px;
+            //     }
+            // }
         }
     }
 

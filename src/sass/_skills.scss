@@ -1,11 +1,13 @@
-section.skills {
+.skills {
 
+    //height: auto;
     .container {
         max-width: 950px;
         width: 100%;
         display: flex;
         justify-content: space-between;
         margin: 50px 0 50px 12%;
+        align-items: center;
 
         @include size(medium){
             margin: 50px 0;
@@ -35,7 +37,8 @@ section.skills {
             }
         }
 
-        .skill-list {
+        .experience {
+            max-width: 244px;
             padding-right: 20px;
 
             h3 {
@@ -47,12 +50,48 @@ section.skills {
             }
 
             ul {
-                // display: flex;
-                // flex-direction: column;
-                // gap: ;
                 li {
-                    font-size: 18px;
-                    line-height: 28px;
+                    margin-bottom: 20px;
+                    p {
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 28px;
+                    }
+
+                    span {
+                        font-size: 16px;
+                        line-height: 25px;
+                    }
+                }
+            }
+
+        }
+
+        .skill-list {
+            h3 {
+                color: $pink;
+                font-size: 24px;
+                line-height: 38px;
+                font-weight: 700;
+                margin-bottom: 32px;
+            }
+
+            ul {
+                display: flex;
+                align-items: flex-start;
+                align-content: flex-start;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                gap: 10px;
+
+                li {
+                    font-size: 14px;
+                    font-weight: 300;
+                    color: $light;
+                    border: 1px solid #6040FF;
+                    border-radius: 100px;
+                    padding: 8px 10px;
+                    cursor: default;
                 }
             }
         }

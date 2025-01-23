@@ -11,9 +11,9 @@ $lightyellow : #FFF59D;
     @if $size == small {
         @media (max-width: 500px) { @content; }
     } @else if $size == medium {
-        @media (max-width: 900px) { @content; }
+        @media (max-width: 1050px) { @content; }
     } @else if $size == large {
-        @media (min-width: 900px) { @content; }
+        @media (min-width: 1050px) { @content; }
     }
 }
 
@@ -137,7 +137,7 @@ main {
         right: auto;
     }
 
-    section{
+    .section{
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -216,9 +216,9 @@ main {
 @import 'sidebar';
 
 #move{
-    background: #212C9D;
-    height: 600px;
-    width: 600px;
+    background: #262696;
+    height: 500px;
+    width: 500px;
     border-radius: 50%;
     //filter: blur(80px);
     left: 50%;
@@ -231,6 +231,28 @@ main {
         display: none;
     }
 }
+
+.loading {
+    width: 45px;
+    aspect-ratio: 2;
+    --_g: no-repeat radial-gradient(circle closest-side, #455A64 90%,#0000);
+    opacity: .8;
+    background: 
+      var(--_g) 0%   50%,
+      var(--_g) 50%  50%,
+      var(--_g) 100% 50%;
+    background-size: calc(100%/3) 50%;
+    animation: l3 1s infinite linear;
+    margin: 50px auto;
+    transition-delay: .6s;
+  }
+
+  @keyframes l3 {
+      20%{background-position:0%   0%, 50%  50%,100%  50%}
+      40%{background-position:0% 100%, 50%   0%,100%  50%}
+      60%{background-position:0%  50%, 50% 100%,100%   0%}
+      80%{background-position:0%  50%, 50%  50%,100% 100%}
+  }
 
 .light {
     background-color: #fff;
@@ -300,3 +322,6 @@ main {
         }
     }
 }
+
+
+

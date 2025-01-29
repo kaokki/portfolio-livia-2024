@@ -42,7 +42,7 @@ export class InternaRelacionados extends HTMLElement {
                 //console.log(informacoes.posts[listaRelacionados[i]].url);
 
                 template.innerHTML += `
-                    <a href="/project.html?name=${informacoes.posts[listaRelacionados[i]].url}&id=${listaRelacionados[i]}" class="animation up">
+                    <a href="/work.html?name=${informacoes.posts[listaRelacionados[i]].url}&id=${listaRelacionados[i]}" class="animation up">
                         <img src="${informacoes.posts[listaRelacionados[i]].img_thumb}" alt="${informacoes.posts[listaRelacionados[i]].titulo}">
                         <p>${informacoes.posts[listaRelacionados[i]].titulo}</p>
                     </a>

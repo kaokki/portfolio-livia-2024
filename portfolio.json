@@ -156,11 +156,23 @@
                     {"img": "src/imgs/projects/luiza/luiza2.jpg"},
                     {"img": "src/imgs/projects/luiza/luiza3.jpg"},
                     {
+                        "video": "src/imgs/projects/luiza/luiza4.mov",
+                        "props": [
+                            {"class": "center", "bgcolor": "#CAD8CF"}
+                        ]
+                    },
+                    {
+                        "video": "src/imgs/projects/luiza/luiza5.mov",
+                        "props": [
+                            {"class": "full", "bgcolor": "none"}
+                        ]
+                    },
+                    {
                         "video": "src/imgs/projects/luiza/luiza6.mov",
                         "video2": "src/imgs/projects/luiza/luiza7.mp4", 
-                        "props:": [
-                            {"right": true, "bgcolor": "#CAD8CF"}, 
-                            {"center": true, "bgcolor": "#FBCAD7"}
+                        "props": [
+                            {"class": "right", "bgcolor": "#CAD8CF"}, 
+                            {"class": "center luiza7", "bgcolor": "#FBCAD7"}
                         ]
                     },
                     {"img": "src/imgs/projects/luiza/luiza8.jpg"}
@@ -171,119 +183,98 @@
             "descricao_interna":"Terra is an internet multinational company. On the web portal they offer several online courses and I was in charge of developing some of their landing pages, such as English courses, Sewing courses, Website building courses and others. The site is built with Gulp processor and Sass and there are smooth JS parallax effects, developed with a heavy emphasis on mobile and tablet functionality to ensure a fluid experience cross-platform.",
             "img_thumb": "src/imgs/thumbs/artistacon.jpg",
             "url":"artista-con",
-            "links": {
-                "website": "https://servicos.terra.com.br/",
-                "github": "http://github"
-            },
             "details": [
                 "HTML5",
                 "SASS",
                 "JavaScript",
-                "Python & Django",
-                "Git & GitHub",
-                "Grunt",
                 "Responsive Design"
             ],
             "Date": [
-                "2016 - 2024"
+                "2022"
             ],
             "galeria": [
                     {"img": "src/imgs/projects/ac/ac1.jpg"},
                     {"img": "src/imgs/projects/ac/ac2.jpg"},
                     {"img": "src/imgs/projects/ac/ac3.jpg"},
                     {"img": "src/imgs/projects/ac/ac4.jpg"},
-                    {"img": "src/imgs/projects/ac/ac5.jpg"},
-                    {"img": "src/imgs/projects/ac/ac6.jpg"}
+                    {"img": "src/imgs/projects/ac/ac5.jpg", "img2": "src/imgs/projects/ac/ac6.jpg"},
+                    {"img": "src/imgs/projects/ac/ac7.jpg"},
+                    {"img": "src/imgs/projects/ac/ac8.jpg"}
                 ]
         },
         {
             "titulo": "Banpar",
-            "descricao_interna":"Terra is an internet multinational company. On the web portal they offer several online courses and I was in charge of developing some of their landing pages, such as English courses, Sewing courses, Website building courses and others. The site is built with Gulp processor and Sass and there are smooth JS parallax effects, developed with a heavy emphasis on mobile and tablet functionality to ensure a fluid experience cross-platform.",
+            "descricao_interna":"Banpar is a credit consultant company and I was in charge of developing their institutional website. I worked along with the UX/UI team who created the clean and modern design. The website was built on Sass for the style, Bootstrap as framework, mainly for the grid, which is a strong characteristic of the layout, and AngularJS was used as the JS framework, which was helpful with the development of all the website forms. It was entirely built with cross-browser and responsive compatibility to ensure the website works across a wide range of devices from mobile to desktop.",
             "img_thumb": "src/imgs/thumbs/banpar.jpg",
             "url":"banpar",
             "links": {
-                "website": "https://servicos.terra.com.br/",
-                "github": "http://github"
+                "website": "https://www.banpar.com.br/"
             },
             "details": [
                 "HTML5",
                 "SASS",
                 "JavaScript",
-                "Python & Django",
-                "Git & GitHub",
-                "Grunt",
+                "AngularJS",
                 "Responsive Design"
             ],
             "Date": [
-                "2016 - 2024"
+                "2019"
             ],
             "galeria": [
                     {"img": "src/imgs/projects/banpar/banpar1.jpg"},
                     {"img": "src/imgs/projects/banpar/banpar2.jpg"},
                     {"img": "src/imgs/projects/banpar/banpar3.jpg"},
                     {"img": "src/imgs/projects/banpar/banpar4.jpg"},
-                    {"img": "src/imgs/projects/banpar/banpar5.jpg"},
-                    {"img": "src/imgs/projects/banpar/banpar6.jpg"}
+                    {"img": "src/imgs/projects/banpar/banpar5.jpg", "img2": "src/imgs/projects/banpar/banpar6.jpg"},
+                    {"img": "src/imgs/projects/banpar/banpar7.jpg"},
+                    {"img": "src/imgs/projects/banpar/banpar8.jpg"}
                 ]
         },
         {
             "titulo": "Trusthub",
-            "descricao_interna":"Terra is an internet multinational company. On the web portal they offer several online courses and I was in charge of developing some of their landing pages, such as English courses, Sewing courses, Website building courses and others. The site is built with Gulp processor and Sass and there are smooth JS parallax effects, developed with a heavy emphasis on mobile and tablet functionality to ensure a fluid experience cross-platform.",
+            "descricao_interna":"Trusthub is a finantial consultant company. Along with the intitutional website, there was the user personal account, and a whole finantial simulation page. Built in AngularJS and Sass, it was developed to have a great performance on mobile, tablet, and desktop devices. Makes use of Angular-material for front-end visuals. Features details as gradient elements, delicated animations and some components such as convinient sliders.",
             "img_thumb": "src/imgs/thumbs/trusthub.jpg",
             "url":"trusthub",
-            "links": {
-                "website": "https://servicos.terra.com.br/",
-                "github": "http://github"
-            },
             "details": [
                 "HTML5",
                 "SASS",
                 "JavaScript",
-                "Python & Django",
-                "Git & GitHub",
-                "Grunt",
+                "AngularJS",
                 "Responsive Design"
             ],
             "Date": [
-                "2016 - 2024"
+                "2018"
             ],
             "galeria": [
-                    {"img": "src/imgs/projects/trusthub/trusthub1.jpg"},
-                    {"img": "src/imgs/projects/trusthub/trusthub2.jpg"},
-                    {"img": "src/imgs/projects/trusthub/trusthub3.jpg"},
-                    {"img": "src/imgs/projects/trusthub/trusthub4.jpg"},
-                    {"img": "src/imgs/projects/trusthub/trusthub5.jpg"},
-                    {"img": "src/imgs/projects/trusthub/trusthub6.jpg"}
+                    {"img": "src/imgs/projects/trusthub/trust1.jpg"},
+                    {"img": "src/imgs/projects/trusthub/trust2.jpg"},
+                    {"img": "src/imgs/projects/trusthub/trust3.jpg"},
+                    {"img": "src/imgs/projects/trusthub/trust4.jpg", "img2": "src/imgs/projects/trusthub/trust5.jpg"},
+                    {"img": "src/imgs/projects/trusthub/trust6.jpg"},
+                    {"img": "src/imgs/projects/trusthub/trust7.jpg"}
                 ]
         },
         {
             "titulo": "Nestlé",
-            "descricao_interna":"Terra is an internet multinational company. On the web portal they offer several online courses and I was in charge of developing some of their landing pages, such as English courses, Sewing courses, Website building courses and others. The site is built with Gulp processor and Sass and there are smooth JS parallax effects, developed with a heavy emphasis on mobile and tablet functionality to ensure a fluid experience cross-platform.",
+            "descricao_interna":"Kit Kat - Break da Sorte was a promotional website where KitKat costumers could win an Android tablet. Needing to work across all browsers and devices, it was built using Bootstrap. Since it was a promotional site, it required customized forms, login page, registered users page for admins etc.<br /><br />Nescau Aventuras Walt Disney World was a promotional website where the registered user could win a trip to Walt Disney World. I was in charge to develop the front-end part of the project, using the Bootstrap framework. The site was built on a responsive structure so users could register to participate the promotion on their phone, tablet and desktop.",
             "img_thumb": "src/imgs/thumbs/nestle.jpg",
             "url":"nestle",
-            "links": {
-                "website": "https://servicos.terra.com.br/",
-                "github": "http://github"
-            },
             "details": [
                 "HTML5",
-                "SASS",
-                "JavaScript",
-                "Python & Django",
-                "Git & GitHub",
-                "Grunt",
+                "CSS3",
+                "JQuery",
+                "Bootstrap",
                 "Responsive Design"
             ],
             "Date": [
-                "2016 - 2024"
+                "2013 - 2014"
             ],
             "galeria": [
                     {"img": "src/imgs/projects/nestle/nestle1.jpg"},
                     {"img": "src/imgs/projects/nestle/nestle2.jpg"},
                     {"img": "src/imgs/projects/nestle/nestle3.jpg"},
                     {"img": "src/imgs/projects/nestle/nestle4.jpg"},
-                    {"img": "src/imgs/projects/nestle/nestle5.jpg"},
-                    {"img": "src/imgs/projects/nestle/nestle6.jpg"}
+                    {"img": "src/imgs/projects/nestle/nestle5.jpg"}
                 ]
         }
     ],

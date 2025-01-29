@@ -20,6 +20,10 @@
         align-items: center;
     }
 
+    @include size(small){
+        background-color: $darkblue;
+    }
+
     .logo {
         font-weight: 400;
         font-size: 20px;
@@ -134,6 +138,7 @@
 
                     &[href='/#skills']{
                         &:after {
+                            top: 0px;
                             content: url(/src/imgs/equal.svg);
                         }
                     }

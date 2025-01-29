@@ -42,15 +42,10 @@ export class InternaProjeto extends HTMLElement {
             const videoDiv = document.createElement('div');
             const videoDiv2 = document.createElement('div');
             let classCol = '';
-            let classVideoCenter = '';
-            let classVideoRight = '';
-            let classVideoLeft = '';
-            let classVideoFull = '';
 
             for (let i = 0; i < ProjInfos.galeria.length; i++){
                 //se tiver 2 colunas
                 ProjInfos.galeria[i].img2 || ProjInfos.galeria[i].video2 ? classCol = 'flex' : classCol = '';
-                //console.log(ProjInfos.galeria[i].props[0].center);
 
                 if(ProjInfos.galeria[i].img) {
                     imgDiv.innerHTML = `
@@ -70,13 +65,8 @@ export class InternaProjeto extends HTMLElement {
 
                 if(ProjInfos.galeria[i].video) {
 
-                    if(ProjInfos.galeria[i].props){
-                        console.log("foi");
-                    }
-
-
                     videoDiv.innerHTML = `
-                        <div class="video" style="--bg-color: ;">
+                        <div class="video ${ProjInfos.galeria[i].props[0].class}" style="--bg-color: ${ProjInfos.galeria[i].props[0].bgcolor};">
                             <video width="100%" autoplay muted loop>
                                 <source src="${ProjInfos.galeria[i].video}" type="video/mp4">
                                 Your browser does not support the video tag.
@@ -87,18 +77,18 @@ export class InternaProjeto extends HTMLElement {
                     videoDiv.innerHTML = '';
                 }
 
-                // if(ProjInfos.galeria[i].video2) {
-                //     videoDiv2.innerHTML = `
-                //         <div class="video" style="--bg-color: ${ProjInfos.galeria[i].bgcolor2};">
-                //             <video width="100%" autoplay muted loop>
-                //                 <source src="${ProjInfos.galeria[i].video2}" type="video/mp4">
-                //                 Your browser does not support the video tag.
-                //             </video>
-                //         </div
-                //         `;
-                // } else {
-                //     videoDiv2.innerHTML = '';
-                // }
+                if(ProjInfos.galeria[i].video2) {
+                    videoDiv2.innerHTML = `
+                        <div class="video ${ProjInfos.galeria[i].props[1].class}" style="--bg-color: ${ProjInfos.galeria[i].props[1].bgcolor};">
+                            <video width="100%" autoplay muted loop>
+                                <source src="${ProjInfos.galeria[i].video2}" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div
+                        `;
+                } else {
+                    videoDiv2.innerHTML = '';
+                }
 
                 //se tiver texto
                 if(ProjInfos.galeria[i].desc) {

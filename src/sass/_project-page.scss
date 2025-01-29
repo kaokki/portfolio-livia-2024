@@ -228,7 +228,7 @@
                 gap: 45px;
 
                 @include size(small){
-                    display: block;
+                    flex-direction: column;
                 }
 
                 img {
@@ -241,23 +241,17 @@
                     }
                 }
             }
+
             .video {
                 background-color: var(--bg-color);
                 display: flex;
                 visibility: hidden;
                 align-items: center;
                 width: 100%;
+                overflow: hidden;
 
                 &.show {
                     visibility: visible;
-                }
-
-                &.center {
-                    justify-content: center;
-
-                    video {
-                        margin: 50px;
-                    }
                 }
 
                 video {
@@ -268,11 +262,47 @@
                     -moz-box-shadow: 3px 4px 11px -1px rgba(0,0,0,0.36);
                 }
 
+                &.center {
+                    justify-content: center;
+                    padding: 70px;
+
+                    @include size(small){
+                        padding: 40px;
+                    }
+                }
+
+                &.luiza7 {
+                    video {
+                        object-fit: cover;
+                        height: 500px;
+                        object-position: 0 -35px;
+                        max-width: 280px;
+
+                        @include size(small){
+                            height: auto;
+                            object-position: 0;
+                        }
+                    }
+                }
+
                 &.full {
                     video {
                         max-width: 100%;
                         border-radius: 0;
                         box-shadow: none;
+                    }
+                }
+
+                &.right {
+                    padding: 60px 60px 60px 0;
+
+                    @include size(small){
+                        padding: 30px 30px 30px 0;
+                    }
+
+                    video {
+                        max-width: 100%;
+                        border-radius: 0 15px 15px 0;
                     }
                 }
             }

@@ -24,6 +24,10 @@
                 max-width: 100%;
             }
 
+            @include size(small){
+                margin-bottom: 40px;
+            }
+
             h2 {
                 @include title-text;
             }

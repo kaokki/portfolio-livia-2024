@@ -30,6 +30,10 @@
                 animation: none;
                 opacity: 1;
             }
+
+            @include size(small){
+                margin-top: 80px;
+            }
         }
 
         .detail {
@@ -147,6 +151,10 @@
                 @include size(medium){
                     animation: none;
                     opacity: 1;
+                }
+
+                @include size(small){
+                    margin-top: 40px;
                 }
     
                 h3 {

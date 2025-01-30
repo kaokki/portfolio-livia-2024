@@ -2,7 +2,7 @@
     "posts": [
         {
         "titulo": "Terra Serviços",
-        "descricao_interna":"Terra is an internet multinational company. On the web portal they offer several online courses and I was in charge of developing some of their landing pages, such as English courses, Sewing courses, Website building courses and others. The site is built with Gulp processor and Sass and there are smooth JS parallax effects, developed with a heavy emphasis on mobile and tablet functionality to ensure a fluid experience cross-platform.",
+        "descricao_interna":"Terra is a multinational internet company that offers a variety of digital services through its online platform, serving both individual customers (B2C) and businesses (B2B). Their services include online courses, email and domain management, and more.<br /><br />I was responsible for developing several of these landing pages. Following the guidelines of the established design system, a foundational structure using Python and JavaScript was built. This allowed my team and me to create dynamic, reusable components that could be applied across different pages, simplifying and improving the development process.",
         "img_thumb": "src/imgs/thumbs/terra.jpg",
         "url":"terra-servicos",
         "links": {
@@ -18,20 +18,20 @@
             "Responsive Design"
         ],
         "Date": [
-            "2016 - 2024"
+            "2019 - 2024"
         ],
         "galeria": [
                 {"img": "src/imgs/projects/terra/terra1.jpg"},
                 {"img": "src/imgs/projects/terra/terra2.jpg", 
                 "desc": {
-                    "title": "Lista de cursos",
-                    "text": "Lista de cursos com filtros, usando API"
+                    "title": "Online courses",
+                    "text": "One of Terra's services is their online courses platform, which offers a wide range of courses across various topics. For this website, we developed a dynamic list of courses pulled directly from their API, allowing users to filter by theme or course name, using Javascript."
                 }},
                 {"img": "src/imgs/projects/terra/terra3.jpg"},
                 {"img": "src/imgs/projects/terra/terra4.jpg",
                 "desc": {
-                    "title": "Componentes",
-                    "text": "Reutilizaçao de componentes em várias páginas, usando API como conteúdo"
+                    "title": "Using components",
+                    "text": "As mentioned before, we worked with dynamic components to ensure reusability across different pages, such as price cards, tables, and more. By using a consistent HTML structure, we were able to load different content for each page, significantly improving the efficiency of the development process."
                 }},
                 {"img": "src/imgs/projects/terra/terra5.jpg"},
                 {"img": "src/imgs/projects/terra/terra6.jpg"},
@@ -39,13 +39,13 @@
                 {"img": "src/imgs/projects/terra/terra8.jpg"},
                 {"img": "src/imgs/projects/terra/terra9.jpg", "img2":"src/imgs/projects/terra/terra10.jpg",
                 "desc": {
-                    "text": "Usando APIs como método de busca"
+                    "text": "Using the provided API, we also built search systems with JavaScript for specific pages. One example is a domain offering service, where users can search for available domain URLs."
                 }}
             ]
         },
         {
             "titulo": "FPF Academia",
-            "descricao_interna":"Terra is an internet multinational company. On the web portal they offer several online courses and I was in charge of developing some of their landing pages, such as English courses, Sewing courses, Website building courses and others. The site is built with Gulp processor and Sass and there are smooth JS parallax effects, developed with a heavy emphasis on mobile and tablet functionality to ensure a fluid experience cross-platform.",
+            "descricao_interna":"FPF Academia was created by the Federação Paulista de Futebol, the leading football entity in the state of São Paulo, to promote courses, training, and lectures.<br /><br />My team and I were responsible for creating their institutional website, providing relevant information about the courses, as well as building an administration panel that allows the FPF team to manage the website content independently.",
             "img_thumb": "src/imgs/thumbs/fpf.jpg",
             "url":"fpf-academia",
             "links": {
@@ -69,8 +69,8 @@
                     {"img": "src/imgs/projects/fpf/fpf4.jpg"},
                     {"img": "src/imgs/projects/fpf/fpf5.jpg",
                     "desc": {
-                        "title": "Admin",
-                        "text": "Painel de administraçao"
+                        "title": "Admin system",
+                        "text": "As mentioned, we developed a CMS that serves as an administration panel, allowing the FPF team to easily input the website information and courses content. The admin system includes forms that support media uploads, such as videos and images, to seamlessly update the website content."
                     }
                     },
                     {"img": "src/imgs/projects/fpf/fpf6.jpg"},
@@ -79,7 +79,7 @@
         },
         {
             "titulo": "Comgas",
-            "descricao_interna":"Terra is an internet multinational company. On the web portal they offer several online courses and I was in charge of developing some of their landing pages, such as English courses, Sewing courses, Website building courses and others. The site is built with Gulp processor and Sass and there are smooth JS parallax effects, developed with a heavy emphasis on mobile and tablet functionality to ensure a fluid experience cross-platform.",
+            "descricao_interna":"Comgas is the largest distributor of piped natural gas in Latin America. The Comgas Excellence Program focuses on managing the performance of its resellers and partners, ensuring greater compliance in the services provided to end consumers.<br /><br />My team was responsible for developing a management platform and dashboard for the Excellence Program, which features rankings, program results, and informative sections for the team. The system also includes an admin area, enabling the Comgas team to update the dashboard content as needed.<br /><br />The outcome of this project is enhanced engagement and transparency with all stakeholders.",
             "img_thumb": "src/imgs/thumbs/comgas.jpg",
             "url":"comgas",
             "details": [
@@ -104,8 +104,8 @@
             ]
         },
         {
-            "titulo": "CGC",
-            "descricao_interna":"Terra is an internet multinational company. On the web portal they offer several online courses and I was in charge of developing some of their landing pages, such as English courses, Sewing courses, Website building courses and others. The site is built with Gulp processor and Sass and there are smooth JS parallax effects, developed with a heavy emphasis on mobile and tablet functionality to ensure a fluid experience cross-platform.",
+            "titulo": "CGC Energia",
+            "descricao_interna":"CGC designs, finances, constructs, and leases fractions of Photovoltaic Power Plants according to international quality standards, supplying electricity through the Compensation System to low voltage consumers in small, medium, and large businesses.<br /><br />For this project, my team was tasked with delivering a comprehensive dashboard and an admin system for both the CGC team and their affiliated companies. I was responsible for developing the front-end, which included designing form sections, building dynamic and responsive tables, and creating complex charts using Vue.js plugins.",
             "img_thumb": "src/imgs/thumbs/cgc.jpg",
             "url":"cgc",
             "links": {
@@ -132,7 +132,7 @@
         },
         {
             "titulo": "Portfolio Luiza",
-            "descricao_interna":"Terra is an internet multinational company. On the web portal they offer several online courses and I was in charge of developing some of their landing pages, such as English courses, Sewing courses, Website building courses and others. The site is built with Gulp processor and Sass and there are smooth JS parallax effects, developed with a heavy emphasis on mobile and tablet functionality to ensure a fluid experience cross-platform.",
+            "descricao_interna":"For this project, I was responsible for developing a portfolio website for designer Luiza Formiga. I chose to build it using Vanilla JavaScript and used web components to create a consistent, modular, and well-built structure. By utilizing JSON to dynamically populate the content, I incorporated various CSS animation effects, including color transitions and a smooth parallax effect, to enhance the user experience while exploring Luiza's work.",
             "img_thumb": "src/imgs/thumbs/luiza.jpg",
             "url":"portfolio-luiza",
             "links": {
@@ -180,7 +180,7 @@
         },
         {
             "titulo": "Artista Con",
-            "descricao_interna":"Terra is an internet multinational company. On the web portal they offer several online courses and I was in charge of developing some of their landing pages, such as English courses, Sewing courses, Website building courses and others. The site is built with Gulp processor and Sass and there are smooth JS parallax effects, developed with a heavy emphasis on mobile and tablet functionality to ensure a fluid experience cross-platform.",
+            "descricao_interna":"Artista Con was an online event created in 2021 during the pandemic with the goal of offering an interactive virtual exhibition for artists to showcase their work and promote their online stores. The event provided a fun, accessible space for people to support independent artists who were unable to participate in physical events due to the pandemic.<br /><br />As the front-end developer, I was responsible for building the event website, which featured a list of participating artists displayed in a random order to ensure equal visibility. Visitors could shuffle the list using a randomize button or use a search field to find artists based on specific themes or styles.<br /><br />The event received great feedback from both visitors and artists, making it a resounding success.",
             "img_thumb": "src/imgs/thumbs/artistacon.jpg",
             "url":"artista-con",
             "details": [
@@ -190,7 +190,7 @@
                 "Responsive Design"
             ],
             "Date": [
-                "2022"
+                "2021"
             ],
             "galeria": [
                     {"img": "src/imgs/projects/ac/ac1.jpg"},
@@ -232,7 +232,7 @@
         },
         {
             "titulo": "Trusthub",
-            "descricao_interna":"Trusthub is a finantial consultant company. Along with the intitutional website, there was the user personal account, and a whole finantial simulation page. Built in AngularJS and Sass, it was developed to have a great performance on mobile, tablet, and desktop devices. Makes use of Angular-material for front-end visuals. Features details as gradient elements, delicated animations and some components such as convinient sliders.",
+            "descricao_interna":"Trusthub is a finantial consultant company. Along with the intitutional website, there was the user personal account, and a whole finantial simulation page.<br /><br />Built in AngularJS and Sass, it was developed to have a great performance on mobile, tablet, and desktop devices. Makes use of Angular-material for front-end visuals. Features details as gradient elements, delicated animations and some components such as convinient sliders.",
             "img_thumb": "src/imgs/thumbs/trusthub.jpg",
             "url":"trusthub",
             "details": [
@@ -256,7 +256,7 @@
         },
         {
             "titulo": "Nestlé",
-            "descricao_interna":"Kit Kat - Break da Sorte was a promotional website where KitKat costumers could win an Android tablet. Needing to work across all browsers and devices, it was built using Bootstrap. Since it was a promotional site, it required customized forms, login page, registered users page for admins etc.<br /><br />Nescau Aventuras Walt Disney World was a promotional website where the registered user could win a trip to Walt Disney World. I was in charge to develop the front-end part of the project, using the Bootstrap framework. The site was built on a responsive structure so users could register to participate the promotion on their phone, tablet and desktop.",
+            "descricao_interna":"I have experience working with Nestlé, where I developed several promotional landing pages. Notably, I’d like to highlight the landing pages I created for Kit Kat and Nescau.<br /><br />Kit Kat Break da Sorte was a promotional website where KitKat costumers could win an Android tablet. Nescau Aventuras Walt Disney World was also a promotional website where the registered user could win a trip to Walt Disney World.<br /><br />I was in charge of developing the front-end part of the projects, using the Bootstrap framework. The site was built on a responsive structure so users could register to participate in the promotion on their phone, tablet and desktop.",
             "img_thumb": "src/imgs/thumbs/nestle.jpg",
             "url":"nestle",
             "details": [
@@ -281,21 +281,23 @@
     "about": {
         "resume": "/src/livia_cv.pdf",
         "descricao": {
-            "titulo": "I love to create intuitive, easy to use and beautiful responsive interfaces with code.",
-            "texto": "Hi, my name is Livia. I'm currently living in Sao Paulo and I've been working as a web designer for 6+ years and I have specialized and focused on front-end development. I have experience on working in agency and worked with some big clients such as Nestlé, Terra, Next & Bradesco. Oh I also love to travel and I'm a cat lady!"
+            "titulo": "I build intuitive, easy to use and well-crafted interfaces with code.",
+            "texto": "Hi, I'm Livia, a <strong>front-end developer</strong> based in São Paulo with over 14 years of experience in the field. Throughout my career, I've specialized in front-end development, focusing on creating seamless and high-performing user experiences. Having worked in agencies and collaborated with major clients like <strong>Terra, Nestlé, Comgas, and FPF</strong>, I've refined my expertise in creating engaging and user-focused websites. Oh I also love to travel and I'm a cat lady!"
         }
     },
     "skills": {
         "detalhes": {
-            "titulo": "I value delivering an intuitive, easy to use and functional product.",
-            "texto": "With a solid understanding of UX/UI Design and SEO principles, I am a detail-oriented professional committed to meeting project deadlines. I have experience collaborating with teams of Designers, Front-end and Back-end Developers on various projects, where I have developed high-quality, clean code while adhering to best practices and standards for web and mobile. I am passionate about learning and exploring new digital technologies, and I am always eager to share my knowledge with others. I have the ability to translate customer needs into functional and appealing interactive applications, ensuring cross-platform compatibility, performance, and support for older browsers."
+            "titulo": "I value creating intuitive, functional products.",
+            "texto": "With a strong foundation in UX/UI design and SEO, I’m a detail-oriented front-end developer focused on delivering clean, high-quality code that meets project deadlines. I’ve collaborated with Designers and Front-end and Back-end Developers to create functional, cross-platform applications while adhering to best practices. I have experience with <strong>JavaScript</strong> frameworks such as <strong>Angular</strong>, <strong>jQuery</strong>, and <strong>VueJS</strong> and my eagerness to stay current with technology has driven me to dive into <strong>React</strong>."
         },
         "list": [ 
             "JavaScript & JQuery", 
             "HTML5 & CSS3", 
             "SCSS / SASS", 
             "Git & GitHub", 
-            "AngularJS", 
+            "Angular", 
+            "React", 
+            "Typescript", 
             "Python & Django", 
             "Vue.js", 
             "PHP", 

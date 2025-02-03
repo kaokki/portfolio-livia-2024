@@ -20,7 +20,7 @@ export class AboutSection extends HTMLElement {
                 </div>
                 <h1>${informacoes.about.descricao.titulo}</h1>
                 <p>${informacoes.about.descricao.texto}</p>
-                <a href="${informacoes.about.resume}">View resume</a>
+                <a target="_blank" href="${informacoes.about.resume}">View resume</a>
             </div>
                 `;
 

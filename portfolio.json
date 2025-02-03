@@ -78,8 +78,8 @@
                 ]
         },
         {
-            "titulo": "Comgas",
-            "descricao_interna":"Comgas is the largest distributor of piped natural gas in Latin America. The Comgas Excellence Program focuses on managing the performance of its resellers and partners, ensuring greater compliance in the services provided to end consumers.<br /><br />My team was responsible for developing a management platform and dashboard for the Excellence Program, which features rankings, program results, and informative sections for the team. The system also includes an admin area, enabling the Comgas team to update the dashboard content as needed.<br /><br />The outcome of this project is enhanced engagement and transparency with all stakeholders.",
+            "titulo": "Comgás",
+            "descricao_interna":"Comgás is the largest distributor of piped natural gas in Latin America. The Comgás Excellence Program focuses on managing the performance of its resellers and partners, ensuring greater compliance in the services provided to end consumers.<br /><br />My team was responsible for developing a management platform and dashboard for the Excellence Program, which features rankings, program results, and informative sections for the team. The system also includes an admin area, enabling the Comgás team to update the dashboard content as needed.<br /><br />The outcome of this project is enhanced engagement and transparency with all stakeholders.",
             "img_thumb": "src/imgs/thumbs/comgas.jpg",
             "url":"comgas",
             "details": [
@@ -156,19 +156,19 @@
                     {"img": "src/imgs/projects/luiza/luiza2.jpg"},
                     {"img": "src/imgs/projects/luiza/luiza3.jpg"},
                     {
-                        "video": "src/imgs/projects/luiza/luiza4.mov",
+                        "video": "src/imgs/projects/luiza/luiza4.mp4",
                         "props": [
                             {"class": "center", "bgcolor": "#CAD8CF"}
                         ]
                     },
                     {
-                        "video": "src/imgs/projects/luiza/luiza5.mov",
+                        "video": "src/imgs/projects/luiza/luiza5.mp4",
                         "props": [
                             {"class": "full", "bgcolor": "none"}
                         ]
                     },
                     {
-                        "video": "src/imgs/projects/luiza/luiza6.mov",
+                        "video": "src/imgs/projects/luiza/luiza6.mp4",
                         "video2": "src/imgs/projects/luiza/luiza7.mp4", 
                         "props": [
                             {"class": "right", "bgcolor": "#CAD8CF"}, 

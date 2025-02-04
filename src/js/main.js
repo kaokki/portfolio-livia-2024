@@ -13,8 +13,13 @@ customElements.define('project-page', InternaProjeto);
 customElements.define('projeto-relacionado', InternaRelacionados);
 
 
-
-
+setTimeout(function() {
+  if(window.location.hash){
+    const urlHash = document.querySelector(window.location.hash);
+    urlHash.scrollIntoView({ behavior: 'smooth' });
+    console.log("loaded");
+  }
+}, 500);
 
 
 
